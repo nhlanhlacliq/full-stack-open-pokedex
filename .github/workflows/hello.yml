@@ -12,5 +12,7 @@ jobs:
       - name: Print Hello, World!
         run: |
           echo "Hello, World!"
-          echo date
-          echo ls
+      - name: Time is
+        run: date
+      - name: print cwd
+        run: ls
