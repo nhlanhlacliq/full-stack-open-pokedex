@@ -15,4 +15,4 @@ jobs:
       - name: Time is
         run: date
       - name: print cwd
-        run: ls
+        run: ls -l
