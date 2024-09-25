@@ -5,6 +5,14 @@ module.exports = {
     'jest/globals': true,
     jest: true,
   },
+  overrides: [
+    {
+      files: ['**/*.jest.spec.jsx'],
+      env: { 'jest/globals': true },
+      plugins: ['jest'],
+      extends: ['plugin:jest/recommended'],
+    },
+  ],
   extends: ['eslint:recommended', 'plugin:react/recommended'],
   parserOptions: {
     ecmaFeatures: {
