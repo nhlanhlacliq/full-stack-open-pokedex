@@ -11,7 +11,7 @@ const formatName = (nameWithDash) => nameWithDash.replace('-', ' ')
 const PokemonPage = ({ previous, next }) => {
   const { name } = useParams()
   const {
-    data: pokemon,
+    data: pokemo,
     error,
     isLoading,
   } = useApi(`https://pokeapi.co/api/v2/pokemon/${name}`)
